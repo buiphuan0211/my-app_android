@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/congHaiSo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Tính Toán"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="monospace" />
+        <TextView
+            android:id="@+id/dsSinhVien"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Danh sách Sinh viên"
+            android:textColor="#FFFFFF"
+            android:background="#FF9800"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="monospace" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Bùi Phú Ân"
+            android:textColor="#FFFFFF"
+            android:background="#FFEB3B"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="monospace" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text= "Bùi Phú Ân"
+            android:textColor="#FFFFFF"
+            android:background="#CDDC39"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="monospace" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Bùi Phú Ân"
+            android:textColor="#FFFFFF"
+            android:background="#8BC34A"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:ems="10" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
