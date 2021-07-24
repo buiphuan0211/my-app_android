@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    >
+
+    <TextView
+        android:id="@+id/textXoa"
+        android:gravity="center"
+        android:textColor="@color/register_bk_color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn xóa sinh viên ....?"
+        />
+
+    <Button
+        android:id="@+id/delete_btn_huy"
+        android:layout_below="@id/textXoa"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hủy" />
+
+    <Button
+        android:id="@+id/delete_btn_xoa"
+        android:layout_below="@id/textXoa"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:text="XÓA" />
+</RelativeLayout>

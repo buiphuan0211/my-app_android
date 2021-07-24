@@ -1,4 +1,4 @@
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -150,12 +150,6 @@
                         android:src="@drawable/ic_google_plus"/>
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/dssv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Danh sách sinh viên" />
 
             </LinearLayout>
         </ScrollView>

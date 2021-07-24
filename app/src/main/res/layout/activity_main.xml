@@ -10,7 +10,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textMain"
+            android:gravity="center"
+            android:textColor="@color/register_bk_color"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAIN"
+            android:fontFamily="cursive"/>
+
+        <EditText
+            android:layout_below="@id/textMain"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@color/register_bk_color"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="1dp"/>
 
         <TextView
             android:id="@+id/congHaiSo"
@@ -18,50 +39,24 @@
             android:layout_height="100dp"
             android:text="Tính Toán"
             android:textColor="#FFFFFF"
-            android:background="#FF5722"
-            android:textSize="16sp"
+            android:background="@drawable/rounded_edge"
+            android:textSize="30sp"
             android:gravity="center"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            />
         <TextView
             android:id="@+id/dsSinhVien"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Danh sách Sinh viên"
             android:textColor="#FFFFFF"
-            android:background="#FF9800"
-            android:textSize="16sp"
+            android:background="@drawable/rounded_edge"
+            android:textSize="30sp"
             android:gravity="center"
             android:fontFamily="monospace" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="Bùi Phú Ân"
-            android:textColor="#FFFFFF"
-            android:background="#FFEB3B"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:fontFamily="monospace" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text= "Bùi Phú Ân"
-            android:textColor="#FFFFFF"
-            android:background="#CDDC39"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:fontFamily="monospace" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="Bùi Phú Ân"
-            android:textColor="#FFFFFF"
-            android:background="#8BC34A"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:fontFamily="monospace"
-            android:ems="10" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

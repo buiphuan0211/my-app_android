@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    >
+
+    <TextView
+        android:id="@+id/textThem"
+        android:gravity="center"
+        android:textColor="@color/register_bk_color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SINH VIÊN"
+        />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textThem"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/create_txt_name"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/create_txt_email"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobieNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/create_txt_mobieNumber"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobieNumber"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/create_txt_password"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_btn_huy"
+        android:layout_below="@id/password"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Hủy" />
+
+    <Button
+        android:id="@+id/create_btn_them"
+        android:layout_below="@id/password"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:text="Thêm" />
+
+    <TextView
+        android:id="@+id/create_error"
+        android:layout_below="@+id/create_btn_them"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

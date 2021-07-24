@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    >
+
+    <TextView
+        android:id="@+id/textThem"
+        android:gravity="center"
+        android:textColor="@color/register_bk_color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CẬP NHẬT THÔNG TIN  SINH VIÊN"
+        />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textThem"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/edit_txt_name"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobieNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/edit_txt_mobieNumber"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobieNumber"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/register_bk_color"/>
+        <EditText
+            android:id="@+id/edit_txt_password"
+            style="@style/modifiedEditText"
+            android:textColor="#978C8C"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_btn_huy"
+        android:layout_below="@id/password"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Hủy" />
+
+    <Button
+        android:id="@+id/edit_btn_capnhat"
+        android:layout_below="@id/password"
+        style="@style/loginButton"
+        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:text="CẬP NHẬT" />
+</RelativeLayout>
